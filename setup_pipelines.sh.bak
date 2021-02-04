@@ -47,7 +47,6 @@ Parameters:
 
   DockerhubPassword:
     Type: String
-    NoEcho: true
     Description: Your DockerHub Password
     Default: ${DOCKERHUB_PASSWORD}
     MinLength: 1
@@ -102,7 +101,6 @@ Parameters:
 
   PreregistryPwd:
     Type: String
-    NoEcho: true
     Description: The password for Pre-Registry user
     Default: ${DSSC_REGPASSWORD}
     MinLength: 1
@@ -142,21 +140,20 @@ Parameters:
     ConstraintDescription: Do not change this
 
   AwsAccessKey:
-    Type: String
-    Description: The AWS access key for SmartCheck to retrieve the images from ECR
-    Default: ${AWS_ACCESS_KEY_ID}
-    MinLength: 1
-    MaxLength: 50
-    ConstraintDescription: Do not change this
+      Type: String
+      Description: The AWS access key for SmartCheck to retrieve the images from ECR
+      Default: ${AWS_ACCESS_KEY_ID}
+      MinLength: 1
+      MaxLength: 50
+      ConstraintDescription: Do not change this
 
   AwsSecretAccessKey:
-    Type: String
-    NoEcho: true
-    Description: The AWS secret access key for SmartCheck to retrieve the images from ECR
-    Default: ${AWS_SECRET_ACCESS_KEY}
-    MinLength: 1
-    MaxLength: 50
-    ConstraintDescription: Do not change this
+        Type: String
+        Description: The AWS secret access key for SmartCheck to retrieve the images from ECR
+        Default: ${AWS_SECRET_ACCESS_KEY}
+        MinLength: 1
+        MaxLength: 50
+        ConstraintDescription: Do not change this
         
 Metadata:
   AWS::CloudFormation::Interface:
