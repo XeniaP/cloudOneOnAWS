@@ -23,7 +23,7 @@ export TREND_AP_SECRET='your_trend_secret_for_cloudOne_Application_Security'
 
 #Cloud One Container Security Settings:
 # see https://cloudone.trendmicro.com/docs/container-security/api-key-create/
-export C1CSAPIKEY='C1CS API Key'
+export C1APIKEY='C1 API Key'
 
 # Dockerhub account information (required to do "authenticated pulls" from docker to get a higher max-pull limit)
 export DOCKERHUB_USERNAME='your username of your (free) account on hub.docker.com'
